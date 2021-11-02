@@ -26,6 +26,12 @@ public class FragmentOne extends Fragment {
         // Required empty public constructor
     }
 
+    public void showOtherFragment()
+    {
+        Fragment fr=new FragmentTwo;
+        FragmentChanger fc=(FragmentChanger)getActivity();
+        fc.replaceFragment(fr);
+    }
     /**
      * Use this factory method to create a new instance of
      * this fragment using the provided parameters.
